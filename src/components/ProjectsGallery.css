@@ -1,0 +1,470 @@
+.projects-gallery {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: transparent;
+  padding: 20px;
+  box-sizing: border-box;
+  padding-top: 100px;
+  padding-left: 80px;
+}
+
+.projects-container {
+  width: 1200px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  overflow-y: auto;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+/* Scrollbar personalizada */
+.projects-container::-webkit-scrollbar {
+  background: transparent;
+  width: 12px;
+}
+
+.projects-container::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 6px;
+}
+
+.projects-container::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.projects-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0);
+}
+
+/* Firefox scrollbar */
+.projects-container {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0);
+}
+
+.project-card {
+  background: #11111162;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 400px;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.image-container {
+  position: relative;
+  height: 200px; /* Mantener altura fija para aspect ratio 1:1 */
+  width: 200px; /* Agregar ancho fijo para aspect ratio 1:1 */
+  margin: 0 auto; /* Centrar la imagen en la tarjeta */
+  border-radius: 12px;
+  overflow: hidden;
+  background: #333;
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantener para cubrir el contenedor 1:1 */
+  transition: transform 0.5s ease;
+  border-radius: 12px;
+  cursor: pointer; /* Agregar cursor pointer para indicar que es clickeable */
+}
+
+.project-image:hover {
+  transform: scale(1.05);
+}
+
+/* Botones de navegación */
+.tav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  opacity: 0;
+  z-index: 2;
+}
+
+.image-container:hover .tav-button {
+  opacity: 1;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.tav-button:hover {
+  background: #fff;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.tav-button:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+/* Indicadores de imagen */
+.image-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  z-index: 2;
+}
+
+.indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background: #fff;
+  transform: scale(1.2);
+}
+
+.content-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-title {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.project-description {
+  color: #ccc;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0;
+  flex: 1;
+}
+
+.project-link {
+  background: #2ec13a;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.project-link:hover {
+  background: #259c2f;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(61, 204, 22, 0.137);
+}
+
+.project-link:active {
+  transform: translateY(0);
+}
+
+/* Estilos para el modal de imagen */
+.image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8); /* Fondo oscurecido sutilmente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1003; /* z-index solicitado */
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.modal-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.close-modal-button {
+  position: absolute;
+  top: 20px;
+  right: 20px; /* Botón en la parte derecha como solicitado */
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 1004;
+}
+
+.close-modal-button:hover {
+  background: #fff;
+  transform: scale(1.1);
+}
+
+/* Media Queries para tablets */
+@media (max-width: 1024px) {
+  .projects-gallery {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    padding: 15px;
+    width: calc(100% - 20%); /* Ajustar ancho responsivo */
+  }
+}
+
+  .projects-container {
+    position: fixed;
+    transform: translateY(-70px) translateX(-90px) scale(.8);
+    width: 100%; /* Ajustar ancho para tablets */
+    grid-template-columns: repeat(3, 1fr); /* Mantener 3 columnas en tablets */
+  }
+
+  .image-container {
+    height: 150px; /* Ajustar tamaño para tablets */
+    width: 280px;
+    object-fit: fill;
+  }
+    .project-title {
+    font-size: .9rem;
+  }
+
+  .project-description {
+    font-size: 0.8rem;
+  }
+
+  .project-link {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+/* Media Queries para móviles */
+@media (max-width: 768px) {
+  .projects-gallery {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    left: 100px;
+    top: 90px;
+    padding: 15px;
+    transform: scale(0.8);
+  }
+
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 700px; /* Usar ancho completo disponible */
+    height: 650px;
+    gap: 15px;
+  }
+
+  .project-card {
+    padding: 15px;
+    min-height: 350px;
+  }
+
+  .image-container {
+    min-height: 150px; /* Mantener aspect ratio 1:1 en móviles */
+    min-width: 150px;
+  }
+
+  .project-title {
+    top: 170px;
+    left: 120px;
+    font-size: 0.8rem;
+  }
+
+  .project-description {
+    position: fixed;
+    display: flex;
+    top: 200px;
+    font-size: 0.7rem;
+    left: 1px;
+  }
+
+  .tav-button {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .project-link {
+    font-size: 12px;
+  }
+
+  /* Ajustar modal para móviles */
+  .modal-content {
+    position: fixed;
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    transform: scale(0.53) translateX(-200px) translateY(-160px);
+  }
+
+  .close-modal-button {
+    top: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+  }
+
+  .image-modal {
+  position: fixed;
+  transform: translateX(-310px) translateY(-280px) scale(0.8);
+  width: 1000px;
+  height: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1003; /* z-index solicitado */
+}
+}
+
+@media (max-width: 480px) {
+  .projects-gallery {
+    padding: 10px;
+  }
+
+  .projects-container {
+    position: fixed;
+    display: flex;
+    gap: 10px;
+
+  }
+
+  .project-card {
+    padding: 12px;
+    min-height: 320px;
+  }
+
+  .image-container {
+    height: 120px; /* Mantener aspect ratio 1:1 en pantallas pequeñas */
+    width: 120px;
+  }
+
+  .project-title {
+    font-size: 1.1rem;
+  }
+
+  .project-description {
+    font-size: 0.8rem;
+  }
+
+  .project-link {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Animaciones adicionales */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-card {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+.project-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.project-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.project-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.project-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.project-card:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.project-card:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.project-card:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+.project-card:nth-child(8) {
+  animation-delay: 0.8s;
+}
+
+.project-card:nth-child(9) {
+  animation-delay: 0.9s;
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Proyecto Alpha",
+    "description": "Descripción detallada del Proyecto Alpha. Este proyecto se enfoca en la creación de una plataforma de análisis de datos en tiempo real utilizando tecnologías de vanguardia.",
+    "image": "/assets/project1.png",
+    "link": "/projects/alpha"
+  },
+  {
+    "id": 2,
+    "title": "Proyecto Beta",
+    "description": "Descripción detallada del Proyecto Beta. Una aplicación móvil innovadora para la gestión de tareas personales, con un enfoque en la gamificación y la productividad.",
+    "image": "/assets/project2.png",
+    "link": "/projects/beta"
+  },
+  {
+    "id": 3,
+    "title": "Proyecto Gamma",
+    "description": "Descripción detallada del Proyecto Gamma. Desarrollo de un sistema de recomendación basado en IA para un cliente de comercio electrónico, mejorando la experiencia del usuario.",
+    "image": "/assets/project3.png",
+    "link": "/projects/gamma"
+  },
+  {
+    "id": 4,
+    "title": "Google Clone",
+    "description": "Un clon funcional de la página de búsqueda de Google, demostrando habilidades en diseño responsivo y manipulación del DOM.",
+    "image": "/assets/1.jpg",
+    "link": "/projects/google-clone"
+  }
+]

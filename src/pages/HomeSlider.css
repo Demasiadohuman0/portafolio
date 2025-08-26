@@ -1,0 +1,351 @@
+.home-slider-wrapper {
+  margin-top: 2rem;
+  transform: scale(0.6);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  perspective: 1000px;
+}
+
+.home-slider-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 3% 0; /* CORRECCIÓN: Convertido a porcentaje */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.home-slider-container::-webkit-scrollbar {
+  display: none;
+}
+
+.home-slider-cell {
+  flex: 0 0 80%;
+  max-width: 30%; /* CORRECCIÓN: Convertido a porcentaje */
+  height: 35rem;
+  scroll-snap-align: center;
+  margin: 0 1.2%; /* CORRECCIÓN: Convertido a porcentaje */
+  box-sizing: border-box;
+  background: #11111162;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  padding: 1.5%; /* CORRECCIÓN: Convertido a porcentaje */
+  display: flex;
+  flex-direction: column;
+  opacity: 0.9;
+  transform: scale(0.95);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.home-slider-cell.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Contenedor para contenido visual */
+.home-visual-content {
+  flex: 0 0 60%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2%; /* CORRECCIÓN: Convertido a porcentaje */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Estilos mejorados para imágenes */
+.home-image-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.home-image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para contenedor Lottie */
+.home-lottie-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos para placeholders de error */
+.lottie-placeholder,
+.image-placeholder,
+.content-error {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  color: #ccc;
+  font-style: italic;
+}
+
+/* Contenido de texto */
+.home-text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+}
+
+.home-text-content h3 {
+  margin-bottom: 0.4%; /* CORRECCIÓN: Convertido a porcentaje */
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.home-text-content p {
+  font-size: 1.3rem;
+  margin-bottom: 0.8%; /* CORRECCIÓN: Convertido a porcentaje */
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.home-slider-btn {
+  background: linear-gradient(135deg, #4339ff, #6366f1);
+  color: white;
+  padding: 0.6% 1.2%; /* CORRECCIÓN: Convertido a porcentaje */
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-top: -0.5%; /* CORRECCIÓN: Convertido a porcentaje */
+}
+
+.home-slider-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(67, 57, 255, 0.3);
+}
+
+/* Navegación con puntos */
+.home-dots-navigation {
+  padding: 0%;
+  transform: scale(0.8) translateY(-3%); /* CORRECCIÓN: Combinado transforms */
+}
+
+.home-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #555;
+  border: none;
+  margin: 0 0.4%; /* CORRECCIÓN: Convertido a porcentaje */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home-dot.active {
+  background-color: #4339ff;
+}
+
+/* CORRECCIÓN: Media Query para PC/Desktop (1024px y arriba) */
+@media (min-width: 1024px) {
+
+    .home-dots-navigation {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: scale(0.6);
+    transform: translateX(-40%);
+    transform: translateY(-20%); 
+    left: 40%;
+  }
+  
+  .home-visual-content {
+    height: 180px;
+    transform: scale(0.7);
+  }
+
+  .home-dot {
+    margin: 3.5% 1%; /* CORRECCIÓN: Convertido a porcentaje */
+    transform: scale(1.5);
+  }
+
+  .home-slider-wrapper {
+    transform: scale(0.5);
+    margin-top: 1.8rem;
+  }
+  
+  .home-slider-container {
+    padding: 2.5% 0;
+  }
+  
+  .home-slider-cell {
+    max-width: 50%;
+    margin: 0 1%;
+    padding: 1.2%;
+  }
+  
+  .home-slider-btn {
+    padding: 0.5% 1%;
+  }
+}
+
+/* CORRECCIÓN: Media Query para Tablets (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .home-slider-wrapper {
+    transform: scale(0.5);
+    margin-top: 1.8rem;
+  }
+  
+  .home-slider-container {
+    padding: 3.5% 0;
+  }
+  
+  .home-slider-cell {
+    max-width: 55%;
+    margin: 0 1.5%;
+    padding: 1.8%;
+  }
+  
+  .home-text-content h3 {
+    font-size: 1.6rem;
+  }
+  
+  .home-text-content p {
+    font-size: 1.1rem;
+  }
+  
+  .home-visual-content {
+    height: 180px;
+    transform: scale(0.8);
+  }
+
+    .home-dots-navigation {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: scale(0.6);
+    transform: translateX(-40%);
+    transform: translateY(-20%); 
+    left: 40%;
+  }
+  
+  .home-dot {
+    margin: 7.5% 1.5%; /* CORRECCIÓN: Convertido a porcentaje */
+    transform: scale(1.5);
+  }
+}
+
+/* CORRECCIÓN: Media Query para Móviles (hasta 767px) */
+@media (max-width: 767px) {
+  .home-slider-wrapper {
+    margin-top: 7%; /* CORRECCIÓN: Convertido a porcentaje */
+    transform: scale(0.7);
+  }
+  
+  .home-slider-container {
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    width: 100%;
+    height: 60vh; /* CORRECCIÓN: Convertido a viewport height */
+    padding: 0; /* CORRECCIÓN: Ajustado padding */
+  }
+  
+  .home-slider-cell {
+    flex-basis: auto;
+    width: 100%;
+    max-width: 85%; /* CORRECCIÓN: Agregado max-width */
+    margin: 0; /* CORRECCIÓN: Convertido a porcentaje */
+    scroll-snap-align: center;
+    min-height: 15vh; /* CORRECCIÓN: Convertido a viewport height */
+    padding: 1%; /* CORRECCIÓN: Ajustado padding */
+  }
+  
+  .home-visual-content {
+    height: 10px; /* CORRECCIÓN: Convertido a viewport height */
+    margin-bottom: 1%;
+    transform: scale(0.5) translateY(-50px);
+  }
+  
+  .home-text-content h3 {
+    font-size: 1.4rem; /* CORRECCIÓN: Ajustado tamaño */
+  }
+  
+  .home-text-content p {
+    font-size: 1rem; /* CORRECCIÓN: Ajustado tamaño */
+  }
+  
+  .home-dots-navigation {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: scale(0.8) translateY(-2%);
+    transform: translateX(35%)
+  }
+  
+  .home-dot {
+    margin: 7.5% 1.5%; /* CORRECCIÓN: Convertido a porcentaje */
+    transform: scale(1.5);
+  }
+}
+
+/* CORRECCIÓN: Media Query adicional para móviles muy pequeños (hasta 480px) */
+@media (max-width: 480px) {
+  .home-slider-wrapper {
+    margin-top: 10%;
+    transform: scale(0.7);
+  }
+  
+  .home-slider-cell {
+    width: 90%;
+    padding: 4%; /* CORRECCIÓN: Ajustado padding */
+    height: 30rem;
+  }
+  
+  .home-text-content h3 {
+    font-size: 1.2rem; /* CORRECCIÓN: Ajustado tamaño */
+  }
+  
+  .home-text-content p {
+    font-size: 0.9rem; /* CORRECCIÓN: Ajustado tamaño */
+  }
+  
+  .home-visual-content {
+    height: 30px;
+    width: 30px;
+  }
+  
+  .home-slider-btn {
+    padding: 1% 2%;
+    font-size: 0.9rem;
+  }
+  
+  .home-dot {
+    margin: 2.5% 0.5%; /* CORRECCIÓN: Convertido a porcentaje */
+    transform: scale(1.2);
+  }
+}

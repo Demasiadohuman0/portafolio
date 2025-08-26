@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Botón rojo fijo en la parte superior */
+.fixed-button {
+  position: fixed;
+  bottom: 3%; /* CORRECCIÓN: Convertido a porcentaje */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 103;
+  background-color: #2ec13a;
+  color: white;
+  border: none;
+  padding: 1% 2%; /* CORRECCIÓN: Convertido a porcentaje */
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.fixed-button:hover {
+  color: #000000;
+  transform: translateX(-50%) scale(1.1);
+}
+
+/* Contenedor principal de la página */
+.page-container {
+  position: fixed;
+  margin-left: 13%;
+  margin-top: -2%;
+  width: 75%; /* CORRECCIÓN: Convertido a porcentaje */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6% 1% 1%; /* CORRECCIÓN: Convertido a porcentaje */
+}
+
+/* Área morada con scroll para los servicios */
+.services-container {
+  width: 100%;
+  max-width: 90%; /* CORRECCIÓN: Convertido a porcentaje */
+  height: 80vh;
+  border-radius: 12px;
+  padding: 2.5%; /* CORRECCIÓN: Convertido a porcentaje */
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Scrollbar personalizada para el área morada */
+.services-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.services-container::-webkit-scrollbar-track {
+  border-radius: 4px;
+}
+
+.services-container::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.services-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Elemento de servicio individual */
+.service-item {
+  display: flex;
+  align-items: center;
+  gap: 1%; /* CORRECCIÓN: Convertido a porcentaje */
+  margin-bottom: 2.5%; /* CORRECCIÓN: Convertido a porcentaje */
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+  transform: scale(1.02);
+}
+
+/* Área de texto negro */
+.text-area {
+  flex: 1;
+  background-color: none;
+  color: white;
+  padding: 2%; /* CORRECCIÓN: Convertido a porcentaje */
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.text-area:hover {
+  transform: scale(1.02);
+}
+
+.text-area h3 {
+  font-size: 22px;
+  margin-bottom: 1%; /* CORRECCIÓN: Convertido a porcentaje */
+  font-weight: bold;
+}
+
+.text-area p {
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* Placeholder para imagen azul */
+.image-placeholder {
+  display: flex;
+  width: 8%; /* CORRECCIÓN: Convertido a porcentaje */
+  height: 100px;
+  transition: transform 0.2s ease;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-placeholder img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+.image-placeholder:hover {
+  transform: scale(1.1);
+}
+
+/* CORRECCIÓN: Media Query para PC/Desktop (1024px y arriba) */
+@media (min-width: 1024px) {
+  .page-container {
+    margin-left: 10%;
+    width: 80%;
+    padding: 5% 1% 1%;
+  }
+  
+  .services-container {
+    max-width: 85%;
+    padding: 2%;
+  }
+  
+  .fixed-button {
+    padding: 0.8% 1.8%;
+    bottom: 2.5%;
+  }
+  
+  .image-placeholder {
+    width: 15%;
+  }
+  
+  .text-area {
+    padding: 1.8%;
+  }
+
+  .text-area h3 {
+  font-size: 18px;
+  margin-bottom: 1%; /* CORRECCIÓN: Convertido a porcentaje */
+  font-weight: bold;
+}
+
+.text-area p {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+}
+
+/* CORRECCIÓN: Media Query para Tablets (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .page-container {
+    margin-left: 8%;
+    margin-top: 0%;
+    width: 85%;
+    padding: 8% 2%;
+  }
+  
+  .services-container {
+    max-width: 95%;
+    padding: 3%;
+    height: 75vh;
+  }
+  
+  .service-item {
+    gap: 2%;
+    margin-bottom: 3%;
+  }
+  
+  .text-area {
+    padding: 2.5%;
+  }
+  
+  .text-area h3 {
+    font-size: 20px;
+  }
+  
+  .text-area p {
+    font-size: 15px;
+  }
+  
+  .image-placeholder {
+    width: 15%;
+    height: 90px;
+  }
+  
+  .fixed-button {
+    padding: 1.2% 2.5%;
+    font-size: 15px;
+    bottom: 3.5%;
+  }
+}
+
+/* CORRECCIÓN: Media Query para Móviles (hasta 767px) */
+@media (max-width: 767px) {
+  .page-container {
+    margin-left: 0%; /* CORRECCIÓN: Ajustado margen */
+    margin-top: 3%; /* CORRECCIÓN: Ajustado margen */
+    width: 100%; /* CORRECCIÓN: Ajustado ancho */
+    height: 85%; /* CORRECCIÓN: Ajustado altura */
+    padding: 10% 2% 2%; /* CORRECCIÓN: Ajustado padding */
+  }
+  
+  .services-container {
+    width: 100%; /* CORRECCIÓN: Ajustado ancho */
+    max-width: 100%;
+    padding: 4%; /* CORRECCIÓN: Ajustado padding */
+    height: 70vh; /* CORRECCIÓN: Ajustado altura */
+  }
+  
+  .service-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 3%; /* CORRECCIÓN: Ajustado gap */
+    margin-bottom: 5%; /* CORRECCIÓN: Ajustado margen */
+  }
+  
+  .text-area {
+    width: 100%;
+    padding: 4%; /* CORRECCIÓN: Ajustado padding */
+  }
+  
+  .text-area h3 {
+    font-size: 18px;
+    margin-bottom: 2%;
+  }
+  
+  .text-area p {
+    font-size: 14px; /* CORRECCIÓN: Ajustado tamaño */
+  }
+  
+  .image-placeholder {
+    width: 25%; /* CORRECCIÓN: Ajustado ancho */
+    height: 80px; /* CORRECCIÓN: Ajustado altura */
+  }
+  
+  .fixed-button {
+    padding: 2% 4%; /* CORRECCIÓN: Ajustado padding */
+    font-size: 14px;
+    bottom: 5%; /* CORRECCIÓN: Ajustado posición */
+  }
+}
+
+/* CORRECCIÓN: Media Query adicional para móviles muy pequeños (hasta 480px) */
+@media (max-width: 480px) {
+  .page-container {
+    margin-left: 2%;
+    margin-top: 15%;
+    width: 96%;
+    padding: 12% 1% 1%;
+  }
+  
+  .services-container {
+    height: 65vh;
+    padding: 5%;
+  }
+  
+  .text-area {
+    padding: 5%;
+  }
+  
+  .text-area h3 {
+    font-size: 16px;
+  }
+  
+  .text-area p {
+    font-size: 13px;
+  }
+  
+  .image-placeholder {
+    width: 30%;
+    height: 70px;
+  }
+  
+  .fixed-button {
+    padding: 2.5% 5%;
+    font-size: 12px;
+  }
+}

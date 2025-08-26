@@ -1,39 +1,30 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import HomeSlider from "./HomeSlider";
+import "../Reactbits/Aurora.css";
 
 const Home = () => {
   return (
     <div>
-      <header className="header">
-        <a href="#" className="logo">bruS.</a>
-        <nav className="navbar">
-          <Link to="/" className="active">Inicio</Link>
-          <Link to="/about">Acerca de..</Link>
-          <a href="#">Servicios</a>
-          <a href="#">Proyectos</a>
-          <Link to="/contact">Contacto</Link>
-        </nav>
-      </header>
-
       <section className="home">
         <div className="home-content">
-          <h1>Hola, soy Bruce Elizalde</h1>
-          <h3>Arquitecto de soluciones + IA</h3>
-          <p>10 años de experiencia</p>
+          <h1>Hello, im Bruce Elizalde</h1>
+          <h3>Software Developer + IA Specialist</h3>
           <div className="btn-box">
-            <a href="#">Escribeme</a>
-            <a href="#">Cuentame de tus proyectos</a>
+            <a href="/contact">Contact</a>
+            <a href="/projects">Projects</a>
+            <a href='/about'>WhatsApp</a>
           </div>
         </div>
 
-        <div className="home-sci">
-          <a href="#"><i className="bx bxl-facebook"></i></a>
-          <a href="#"><i className="bx bxl-twitter"></i></a>
-          <a href="#"><i className="bx bxl-linkedin"></i></a>
-        </div>
+        <HomeSlider />
 
-        <span className=""></span>
-      </section>
+        </section>
+        <div className="home-sci">
+          <a href="https://www.facebook.com" target="_blank"><i className="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com" target="_blank"><i className="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com" target="_blank"><i className="bx bxl-linkedin"></i></a>
+        </div>
     </div>
   );
 };

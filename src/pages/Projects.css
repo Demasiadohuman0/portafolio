@@ -1,0 +1,18 @@
+.projects-container {
+  display: flex;
+  text-align: center;
+  padding: 2rem;
+}
+
+.projects-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.projects-description {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}

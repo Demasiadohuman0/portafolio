@@ -1,12 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-import AppRoutes from './Routes';
+import React from 'react';
+import { BrowserRouter as Router } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import AppRoutes from "./Routes";
+import "./App.css";
+import './components/BackgroundWrapper.css';
+import './Reactbits/Aurora.css';
+import Aurora from './Reactbits/Aurora';
 
 function App() {
   return (
-    <div className="App">
-      <AppRoutes />
-    </div>
+    <Router>
+      <Aurora />
+      <div className="App">
+        <Navbar />
+        <AppRoutes />
+      </div>
+    </Router>
   );
 }
 

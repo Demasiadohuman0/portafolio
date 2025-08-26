@@ -1,0 +1,245 @@
+.contact-container {
+  position: fixed;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 4%; /* CORRECCIÓN: Convertido a porcentaje */
+  box-sizing: border-box;
+  gap: 3%; /* CORRECCIÓN: Convertido a porcentaje */
+  min-height: 100%;
+  margin-left: 15%;
+}
+
+.custom-class {
+  box-sizing: content-box;
+  position: relative;
+  width: 30%; /* CORRECCIÓN: Convertido a porcentaje */
+  display: flex;
+  font-size: 18px;
+  justify-content: left;
+}
+
+.contact-sci {
+  display: flex;
+  position: relative;
+  height: 40px;
+  width: 12%; /* CORRECCIÓN: Convertido a porcentaje */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 1.5%; /* CORRECCIÓN: Convertido a porcentaje */
+}
+
+.contact-sci a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0);
+  border: 2px solid white;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #00abf0;
+  text-decoration: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* CORRECCIÓN: Media Query para PC/Desktop (1024px y arriba) */
+@media (min-width: 1024px) {
+  .contact-container {
+    margin-left: 12%;
+    padding: 3%;
+    gap: 2.5%;
+  }
+
+  .custom-spotlight-card {
+    width: 19rem; /* CORRECCIÓN: Convertido a porcentaje */
+    height: 19rem; /* CORRECCIÓN: Cambiado a auto */
+    left: 10%; /* CORRECCIÓN: Centrado */
+    font-size: 14px;
+  }
+  
+  .custom-class {
+    box-sizing: content-box;
+    position: relative;
+    height: 19re;
+    width: 19rem; /* CORRECCIÓN: Ajustado ancho */
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4%; /* CORRECCIÓN: Convertido a porcentaje */
+    left: 8%; /* CORRECCIÓN: Centrado */
+  }
+  
+  .contact-sci {
+    height: 40px;
+    width: 50%; /* CORRECCIÓN: Ajustado ancho */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 3%; /* CORRECCIÓN: Ajustado margen */
+  }
+  
+  .contact-sci a {
+    width: 50px; /* CORRECCIÓN: Reducido tamaño */
+    height: 30px; /* CORRECCIÓN: Reducido tamaño */
+    background: rgba(17, 255, 4, 0.158);
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 14px; /* CORRECCIÓN: Reducido tamaño */
+    transform: scale(1.2);
+  }
+}
+
+/* CORRECCIÓN: Media Query para Tablets (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contact-container {
+    margin-left: 3%;
+    padding: 3%;
+    gap: 2.5%;
+  }
+
+  .custom-spotlight-card {
+    width: 19rem; /* CORRECCIÓN: Convertido a porcentaje */
+    height: 19rem; /* CORRECCIÓN: Cambiado a auto */
+    left: 10%; /* CORRECCIÓN: Centrado */
+    font-size: 14px;
+  }
+  
+  .custom-class {
+    box-sizing: content-box;
+    position: relative;
+    height: 19re;
+    width: 19rem; /* CORRECCIÓN: Ajustado ancho */
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4%; /* CORRECCIÓN: Convertido a porcentaje */
+    left: 8%; /* CORRECCIÓN: Centrado */
+  }
+  
+  .contact-sci {
+    height: 40px;
+    width: 50%; /* CORRECCIÓN: Ajustado ancho */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 3%; /* CORRECCIÓN: Ajustado margen */
+  }
+  
+  .contact-sci a {
+    width: 50px; /* CORRECCIÓN: Reducido tamaño */
+    height: 30px; /* CORRECCIÓN: Reducido tamaño */
+    background: rgba(17, 255, 4, 0.158);
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 14px; /* CORRECCIÓN: Reducido tamaño */
+    transform: scale(1.2);
+  }
+}
+
+/* CORRECCIÓN: Media Query para Móviles (hasta 767px) */
+@media (max-width: 767px) {
+  .contact-container {
+    position: fixed;
+    display: flex; /* CORRECCIÓN: Cambiado de table-row a flex */
+    flex-direction: column; /* CORRECCIÓN: Agregado para layout vertical */
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 90%; /* CORRECCIÓN: Ajustado ancho */
+    height: auto; /* CORRECCIÓN: Cambiado a auto */
+    top: 3%; /* CORRECCIÓN: Ajustado posición */
+    left: 5%; /* CORRECCIÓN: Cambiado right por left */
+    margin-left: 0; /* CORRECCIÓN: Removido margen */
+    padding: 6%; /* CORRECCIÓN: Ajustado padding */
+    gap: 5%; /* CORRECCIÓN: Ajustado gap */
+  }
+  
+  .custom-spotlight-card {
+    width: 17rem; /* CORRECCIÓN: Convertido a porcentaje */
+    height: 17rem; /* CORRECCIÓN: Cambiado a auto */
+    left: 0; /* CORRECCIÓN: Centrado */
+    font-size: 14px;
+  }
+  
+  .custom-class {
+    box-sizing: content-box;
+    position: relative;
+    width: 90%; /* CORRECCIÓN: Ajustado ancho */
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4%; /* CORRECCIÓN: Convertido a porcentaje */
+    right: 0; /* CORRECCIÓN: Centrado */
+  }
+  
+  .contact-sci {
+    display: flex;
+    position: relative;
+    height: 40px;
+    width: 50%; /* CORRECCIÓN: Ajustado ancho */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 3%; /* CORRECCIÓN: Ajustado margen */
+  }
+  
+  .contact-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* CORRECCIÓN: Reducido tamaño */
+    height: 30px; /* CORRECCIÓN: Reducido tamaño */
+    background: rgba(17, 255, 4, 0.158);
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 16px; /* CORRECCIÓN: Reducido tamaño */
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+  }
+}
+
+/* CORRECCIÓN: Media Query adicional para móviles muy pequeños (hasta 480px) */
+@media (max-width: 480px) {
+  .contact-container {
+    width: 70%;
+    top: 15%;
+    left: 2.5%;
+    padding: 8%;
+  }
+  
+  .custom-class {
+    width: 100%;
+    font-size: 14px;
+    padding: 5%;
+  }
+  
+  .contact-sci {
+    width: 60%;
+    margin-top: 4%;
+  }
+  
+  .contact-sci a {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,224 @@
+/* Estilos para el componente Navbar */
+
+/* Contenedor principal del navbar */
+.navbar {
+  position: fixed;
+  top: 20px;
+  left: 42%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  z-index: 1001; /* Capa superior para que no se vea afectado por otros elementos */
+}
+
+/* Estilos base para todos los botones de navegación */
+.nav-button {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #3028c1; /* Azul como en la referencia */
+  border: none;
+  cursor: pointer;
+  margin-bottom: 110px;
+  transition: transform 0.2s ease; /* Animación de escalado */
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; /* Para el enlace del botón home */
+}
+
+/* Iconos dentro de los botones - color blanco */
+.nav-button i {
+  color: white;
+  font-size: 20px;
+}
+
+/* Efecto de escalado al pasar el ratón por cualquier botón */
+.nav-button:hover {
+  transform: scale(1.3); /* Escalado del 110% */
+}
+
+/* Efecto al hacer click en cualquier botón */
+.nav-button:active {
+  transform: scale(0.95);
+}
+
+/* Botón del menú - mantiene el estilo original por compatibilidad */
+.menu-button {
+  left: 2.5%;
+  /* Hereda todos los estilos de .nav-button */
+}
+
+/* Botón de inicio/logo */
+.home-button {
+  transform: scale(1.2);
+  /* Hereda todos los estilos de .nav-button */
+}
+
+/* Botón pendiente */
+.pending-button {
+  /* Hereda todos los estilos de .nav-button */
+}
+
+/* Contenedor de círculos decorativos */
+.decorative-circles {
+  display: flex;
+  gap: 10px;
+}
+
+/* Círculos decorativos - turquesa */
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.circle.turquesa {
+  background-color: #22d3ee; /* Color turquesa como en la referencia */
+}
+
+/* Overlay oscuro que aparece detrás del menú */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.426);
+  z-index: 999;
+}
+
+/* Menú desplegable - panel gris */
+.dropdown-menu {
+  position: fixed;
+  top: 0;
+  left: -300px; /* Inicialmente oculto fuera de la pantalla */
+  width: 250px;
+  height: 100vh;
+  background-color: #3028c1; /* Color gris como en la referencia */
+  padding: 40px 30px;
+  z-index: 1000;
+  transition: left 0.2s ease; /* Animación de deslizamiento - 0.3 segundos */
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-button:active {
+  transform: scale(0.90);
+}
+
+/* Estado abierto del menú - se desliza hacia la derecha */
+.dropdown-menu.open {
+  left: 0; /* Se posiciona en su lugar final */
+}
+
+/* Título del menú */
+.menu-title {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+/* Lista de elementos del menú */
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin-left: 25px;
+}
+
+/* Cada elemento del menú */
+.menu-item {
+  margin-bottom: 20px;
+}
+
+/* Enlaces del menú */
+.menu-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: block;
+  transition: opacity 0.2s ease;
+}
+
+/* Efecto hover en los enlaces */
+.menu-link:hover {
+  opacity: 0.8;
+}
+
+/* Estilos responsive para móviles */
+@media (max-width: 768px) {
+  /* Ajustar tamaño del navbar en móviles */
+  .navbar {
+    transform: scale(0.8);
+    left: 8.5rem;
+    top: 5px;
+    gap: 14px;
+  }
+
+  /* Reducir tamaño de botones en móviles */
+  .nav-button,
+  .circle {
+    width: 60px;
+    height: 60px;
+  }
+
+  /* Ajustar tamaño de iconos en móviles */
+  .nav-button i {
+    font-size: 18px;
+  }
+
+  /* Ajustar ancho del menú en móviles */
+  .dropdown-menu {
+    width: 150px;
+    left: -250px;
+    padding: 30px 20px;
+  }
+
+  /* Ajustar tamaño de texto en móviles */
+  .menu-title {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+  }
+
+  .menu-link {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajustes adicionales para pantallas muy pequeñas */
+  .navbar {
+    top: 10px;
+    gap: 5px;
+  }
+
+  .nav-button,
+  .circle {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Ajustar tamaño de iconos para pantallas pequeñas */
+  .nav-button i {
+    font-size: 16px;
+  }
+
+  .dropdown-menu {
+    width: 220px;
+    left: -220px;
+    padding: 25px 15px;
+  }
+
+  .menu-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .menu-link {
+    font-size: 1rem;
+  }
+}
