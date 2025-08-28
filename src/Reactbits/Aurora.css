@@ -8,3 +8,9 @@
   transform-origin: top center; /* Escala desde el centro de la parte superior */
   overflow: hidden;
 }
+
+@media (max-width: 480px) {
+  .aurora-container {
+  transform: scale(1.2); /* Ajusta el escalado para pantallas pequeñas */
+  }
+}

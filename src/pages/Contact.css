@@ -168,10 +168,11 @@
   }
   
   .custom-spotlight-card {
-    width: 17rem; /* CORRECCIÓN: Convertido a porcentaje */
-    height: 17rem; /* CORRECCIÓN: Cambiado a auto */
+    width: 18rem; /* CORRECCIÓN: Convertido a porcentaje */
+    height: 18rem; /* CORRECCIÓN: Cambiado a auto */
     left: 0; /* CORRECCIÓN: Centrado */
     font-size: 14px;
+    transform: translateY(-17%); /* CORRECCIÓN: Ajustado margen */
   }
   
   .custom-class {
@@ -220,16 +221,15 @@
 /* CORRECCIÓN: Media Query adicional para móviles muy pequeños (hasta 480px) */
 @media (max-width: 480px) {
   .contact-container {
-    width: 70%;
-    top: 15%;
-    left: 2.5%;
-    padding: 8%;
   }
   
   .custom-class {
+    position: relative;
     width: 100%;
-    font-size: 14px;
+    font-size: 16px;
     padding: 5%;
+    left: 0%;
+    transform: translateY(-30%);
   }
   
   .contact-sci {

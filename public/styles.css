@@ -331,13 +331,13 @@ body {
     
     .home-content {
         padding-left: 5%;
-        padding-bottom: 80%;
-        max-width: 90%;
-        transform: scale(0.9); /* CORRECCIÓN: Ajustado el scale */
+        width: 30rem;
+        height: 50rem;
+        transform: scale(0.9) translateY(-180%); /* CORRECCIÓN: Ajustado el scale */
     }
     
     .home-content h1 {
-        font-size: 24px;
+        font-size: 27px;
         text-align: center;
     }
     
@@ -354,11 +354,9 @@ body {
     }
     
     .home-content .btn-box {
-        left: 10%; /* CORRECCIÓN: Ajustado posicionamiento */
-        top: 60%; /* CORRECCIÓN: Ajustado posicionamiento */
-        margin-top: 35%;
-        width: 80%;
-        transform: scale(0.8);
+        left: -13.5%; /* CORRECCIÓN: Ajustado posicionamiento */
+        top: 410%;
+        transform: scale(0.8)
     }
     
     .home-sci {

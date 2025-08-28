@@ -79,9 +79,7 @@
 /* CORRECCIÓN: Media Query adicional para móviles muy pequeños (hasta 480px) */
 @media (max-width: 480px) {
   .about-container {
-    width: 95%;
-    left: 2.5%;
-    top: 25%;
+  top: 40%;
   }
   
   .about .custom-class {
