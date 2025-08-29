@@ -8,11 +8,11 @@ const Home = () => {
     <div>
       <section className="home">
         <div className="home-content">
-          <h1>Hello, im Bruce Elizalde</h1>
+          <h1>Hola, Soy Bruce Elizalde</h1>
           <h3>Software Developer + IA Specialist</h3>
           <div className="btn-box">
-            <a href="/contact">Contact</a>
-            <a href="/projects">Projects</a>
+            <a href="/contact">Contacto</a>
+            <a href="/projects">Proyectos</a>
             <a href='/about'>WhatsApp</a>
           </div>
         </div>

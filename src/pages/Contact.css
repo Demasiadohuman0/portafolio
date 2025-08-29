@@ -58,8 +58,8 @@
   }
 
   .custom-spotlight-card {
-    width: 19rem; /* CORRECCIÓN: Convertido a porcentaje */
-    height: 19rem; /* CORRECCIÓN: Cambiado a auto */
+    width: 20rem; /* CORRECCIÓN: Convertido a porcentaje */
+    height: 20rem; /* CORRECCIÓN: Cambiado a auto */
     left: 10%; /* CORRECCIÓN: Centrado */
     font-size: 14px;
   }

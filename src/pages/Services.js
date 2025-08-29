@@ -78,10 +78,6 @@ const Services = () => {
     }
   }, [])
 
-  const handleFixedButtonClick = () => {
-    alert("¡Botón fijo clickeado!")
-    // Aquí puedes agregar la funcionalidad que necesites
-  }
 
   const services = [
     {
@@ -166,10 +162,13 @@ const Services = () => {
 
   return (
     <>
-      {/* Botón rojo fijo en la parte superior */}
-      <button className="fixed-button" onClick={handleFixedButtonClick}>
-        My CV
-      </button>
+      {/* Botón verde fijo en la parte superior */}
+      <a href="/CV_elizalde.pdf"
+      download="CV_elizalde.pdf" 
+      className="fixed-button" 
+      >
+        Mi CV
+      </a>
 
       {/* Área principal de la página */}
       <div className="page-container">

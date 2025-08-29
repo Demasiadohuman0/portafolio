@@ -354,8 +354,8 @@ body {
     }
     
     .home-content .btn-box {
-        left: -13.5%; /* CORRECCIÓN: Ajustado posicionamiento */
-        top: 410%;
+        left: -17.5%; /* CORRECCIÓN: Ajustado posicionamiento */
+        top: 380%;
         transform: scale(0.8)
     }
     

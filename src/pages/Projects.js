@@ -39,34 +39,27 @@ import image39 from "../assets/images/89.jpg"
 import image40 from "../assets/images/image1.jpg"
 import image41 from "../assets/images/image2.jpg"
 import image42 from "../assets/images/image3.jpg"
+import image43 from "../assets/images/90.jpg"
+import image44 from "../assets/images/91.jpg"
+import image45 from "../assets/images/92.jpg"
+
 
 // Ejemplo de cómo usar el componente con datos personalizados
 const customProjects = [
   {
     id: 1,
-    title: "Snacks Olivo App",
-    description:
-      "Aplicación móvil para gestión y promoción de productos de Snacks Olivo, incluye catálogo y pedidos, utilize React Native, Firebase, CSS, para pruebas internas y promoción de marca, app lista en 1.5 meses",
-    images: [
-      image1, // <-- MODIFICA ESTAS RUTAS CON TUS IMÁGENES LOCALES
-      image2, // <-- MODIFICA ESTAS RUTAS CON TUS IMÁGENES LOCALES
-      image18, // <-- MODIFICA ESTAS RUTAS CON TUS IMÁGENES LOCALES
-    ],
-    link: "https://mi-proyecto-web.com",
-  },
-  {
-    id: 2,
     title: "Portafolio App",
     description:
       "Sitio web personal que concentra mis proyectos, experiencia y habilidades técnicas, utilize React JS, CSS, animaciones, plataforma lista y actualizable para mostrar trayectoria profesional, app lista en 1 mes.",
     images: [
-      image4, // <-- MODIFICA ESTAS RUTAS CON TUS IMÁGENES LOCALES
-      image6, // <-- MODIFICA ESTAS RUTAS CON TUS IMÁGENES LOCALES
+      image43, // <-- MODIFICA ESTAS RUTAS CON TUS IMÁGENES LOCALES
+      image44,
+      image45,  // <-- MODIFICA ESTAS RUTAS CON TUS IMÁGENES LOCALES
     ],
     link: "https://mi-app-movil.com",
   },
   {
-    id: 3,
+    id: 2,
     title: "Spotify Clone App",
     description:
       "Desarrollo de un clon funcional inspirado en Spotify, con interfaz moderna y experiencia de usuario fluida, utilize React, CSS, APIs de música, creación de interfaz completa y funciones de reproducción, app lista en 2 meses.",
@@ -77,10 +70,10 @@ const customProjects = [
       image39,
       image36, // <-- MODIFICA ESTAS RUTAS CON TUS IMÁGENES LOCALES
     ],
-    link: "https://mi-app-movil.com",
+    link: "https://spoti-clone-ruddy.vercel.app/",
   },
   {
-    id: 4,
+    id: 3,
     title: "Google Keep Clone App",
     description:
       "Versión simplificada de Google Keep con funciones de notas y recordatorios personalizados, hecha conReact JS, CSS, implementación de CRUD y diseño adaptable, app lista en 3 semanas.",
@@ -89,8 +82,22 @@ const customProjects = [
       image40,
       image41, // <-- MODIFICA ESTAS RUTAS CON TUS IMÁGENES LOCALES
     ],
-    link: "https://mi-app-movil.com",
+    link: "https://vercel.com/demasiadohuman0s-projects",
   },
+
+{
+    id: 4,
+    title: "Snacks Olivo App",
+    description:
+      "Aplicación móvil para gestión y promoción de productos de Snacks Olivo, incluye catálogo y pedidos, utilize React Native, Firebase, CSS, para pruebas internas y promoción de marca, app lista en 1.5 meses",
+    images: [
+      image1, // <-- MODIFICA ESTAS RUTAS CON TUS IMÁGENES LOCALES
+      image2, // <-- MODIFICA ESTAS RUTAS CON TUS IMÁGENES LOCALES
+      image18, // <-- MODIFICA ESTAS RUTAS CON TUS IMÁGENES LOCALES
+    ],
+    link: "https://www.facebook.com/share/1JCj9byyrF/",
+  },
+
   {
     id: 5,
     title: "Minecraft C++ Modder",
@@ -101,7 +108,7 @@ const customProjects = [
       image21,
       image22, // <-- MODIFICA ESTAS RUTAS CON TUS IMÁGENES LOCALES
     ],
-    link: "https://mi-app-movil.com",
+    link: "https://www.instagram.com/minecraft?igsh=MWI4aTQycmY1NWFqaw==",
   },
   {
     id: 6,
@@ -112,7 +119,7 @@ const customProjects = [
       image26, // <-- MODIFICA ESTAS RUTAS CON TUS IMÁGENES LOCALES
       image27, // <-- MODIFICA ESTAS RUTAS CON TUS IMÁGENES LOCALES
     ],
-    link: "https://mi-app-movil.com",
+    link: "https://www.instagram.com/dragonballsuper?igsh=MWxvY2RmMWR5MHdvZQ==",
   },
   {
     id: 7,
@@ -135,7 +142,7 @@ const customProjects = [
       image23,
       image25,
     ],
-    link: "https://mi-app-movil.com",
+    link: "https://www.facebook.com/share/19RMdzrVYS/",
   },
   {
     id: 8,
@@ -147,7 +154,7 @@ const customProjects = [
       image30,
       image31, // <-- MODIFICA ESTAS RUTAS CON TUS IMÁGENES LOCALES
     ],
-    link: "https://mi-app-movil.com",
+    link: "https://www.facebook.com/share/19RMdzrVYS/",
   },
   {
     id: 9,
@@ -157,7 +164,7 @@ const customProjects = [
     images: [
       image28, // <-- MODIFICA ESTAS RUTAS CON TUS IMÁGENES LOCALES
     ],
-    link: "https://mi-app-movil.com",
+    link: "https://youtube.com/@bras0gamer?feature=shared",
   },
   {
     id: 10,
@@ -169,7 +176,7 @@ const customProjects = [
       image33,
       image34, // <-- MODIFICA ESTAS RUTAS CON TUS IMÁGENES LOCALES
     ],
-    link: "https://mi-app-movil.com",
+    link: "https://www.instagram.com/epicurio_el_fantastico?igsh=MXUzcW80bXo4ZnJ0Yg==",
   },
   {
     id: 11,

@@ -389,11 +389,11 @@
 
   .projects-container {
     position: relative;
-    bottom: -18%;
-    width: 37rem; /* Usar ancho completo disponible */
+    bottom: -13rem;
+    width: 34rem; /* Usar ancho completo disponible */
     height: 74rem;
     position: fixed;
-    gap: 15px;
+    gap: 10px;
 
   }
 

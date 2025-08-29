@@ -11,6 +11,6 @@
 
 @media (max-width: 480px) {
   .aurora-container {
-  transform: scale(1.2); /* Ajusta el escalado para pantallas pequeñas */
+  width: 40rem; /* Ajusta el escalado para pantallas pequeñas */
   }
 }

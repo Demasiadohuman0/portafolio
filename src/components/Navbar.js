@@ -31,11 +31,11 @@ const Navbar = () => {
 
   // Array con los elementos del menú y sus rutas correspondientes
   const menuItems = [
-    { name: "- Home", route: "/Home" },
-    { name: "- Projects", route: "/Projects" },
-    { name: "- Services", route: "/Services" },
-    { name: "- Contact", route: "/Contact" },
-    { name: "- About", route: "/About" },
+    { name: "- Inicio", route: "/Home" },
+    { name: "- Proyectos", route: "/Projects" },
+    { name: "- Servicios", route: "/Services" },
+    { name: "- Contacto", route: "/Contact" },
+    { name: "- Acerca de mi", route: "/About" },
   ]
 
   return (
