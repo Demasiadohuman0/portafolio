@@ -10,6 +10,11 @@ import Projects from './pages/Projects';
 const AppRoutes = () => {
   return (
     <Routes>
+       <Route path="/" element={
+          <BackgroundWrapper><Home />
+          </BackgroundWrapper>
+        } 
+      />
         <Route path="/home" element={
           <BackgroundWrapper><Home />
           </BackgroundWrapper>

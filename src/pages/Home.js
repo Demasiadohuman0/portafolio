@@ -13,7 +13,7 @@ const Home = () => {
           <div className="btn-box">
             <a href="/contact">Contacto</a>
             <a href="/projects">Proyectos</a>
-            <a href='/about'>WhatsApp</a>
+            <a href="https://wa.me/5216391234567" target="_blank">WhatsApp</a>
           </div>
         </div>
 

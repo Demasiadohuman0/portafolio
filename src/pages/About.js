@@ -8,15 +8,11 @@ const About = () => {
     <div class="home">
       <div className="about-container">
         <ShinyText text="
-I am a Software Developer and AI Specialist with a background that combines creativity, technical discipline, and strategic vision. My experience spans the development of web and mobile applications, UI/UX design, and digital projects focused on delivering efficient and scalable technological solutions.
+Me llamo Bruce Elizalde, soy software developer, mi carrera también incluye la exploración de entornos creativos y técnicos como el desarrollo de mods para videojuegos en Java y C++, lo que me permitió fortalecer mi capacidad de resolución de problemas en sistemas complejos. De igual manera, he trabajado en proyectos de diseño digital y multimedia, aplicando herramientas como Photoshop, Blender y FL Studio para branding, producción musical y creación de contenido.
 
-I have worked on projects such as Spotify Clone, where I implemented CRUD functionality and a modern user experience using React, TypeScript, TailwindCSS, and MongoDB. I also developed Snacks Olivo App, a mobile application for product management and online sales, integrating Firebase and Stripe, which increased the company’s sales performance by more than 30%. Additionally, I created the Google Keep App, a notes system with personalized reminders, and my own Portfolio App, an interactive platform showcasing my projects and skills.
+En el ámbito académico, actualmente curso la Licenciatura en Psicología con especialidad en IT/AI en la Universidad Vizcaya de las Américas (2023-2027) y previamente estudié Ingeniería en Mecatrónica en la Universidad Tecnológica de Camargo (2019-2020). Mi formación se complementa con certificaciones de Meta en Ingeniería de Bases de Datos, Google en Ciencia de Datos (en proceso) y diversos programas de programación y cloud computing.
 
-My profile also includes experience in creative and technical environments, such as developing video game mods using Java and C++, which strengthened my problem-solving abilities in complex systems. Furthermore, I have worked on digital design and multimedia projects, applying tools such as Photoshop, Blender, and FL Studio for branding, music production, and content creation.
-
-Academically, I am currently pursuing a Bachelor’s Degree in Psychology with a specialization in IT/AI at Universidad Vizcaya de las Américas (2023–2027), and I previously studied Mechatronics Engineering at Universidad Tecnológica de Camargo (2019–2020). My education is complemented by certifications, including Meta’s Database Engineering Certificate, Google’s Data Science Certificate (in progress), and additional training in programming and cloud computing.
-
-I am recognized for my adaptability to dynamic technological environments, teamwork, and collaborative leadership. My professional approach focuses on delivering measurable results through technological solutions that generate real value for companies and projects, always maintaining a high professional standard with a creative perspective." disabled={false} speed={2} className='about-custom-class' />
+Me caracterizo por mi adaptabilidad a entornos tecnológicos cambiantes, capacidad de trabajo en equipo y liderazgo colaborativo. Mi enfoque es entregar resultados medibles mediante soluciones tecnológicas que aporten valor real a empresas y proyectos, siempre con un estándar profesional y creativo." disabled={false} speed={2} className='about-custom-class' />
       </div>
     </div>
   );

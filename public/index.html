@@ -1,15 +1,48 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MexaTech</title>
+    <title>Itzun Labs</title>
+    <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Reactbits/Aurora.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   </head>
 
   <body>
-    <div id="root"></div>
+    <div class="loader-container">
+      <div class="spinner"></div>
+    </div>
+    
+    <div id="root">
+      <div>
+        <section class="home">
+          <div class="home-content">
+            <h1>Hola, Soy Bruce Elizalde</h1>
+            <h3>Software Developer + IA Specialist</h3>
+            <div class="btn-box">
+              <a href="/contact">Contacto</a>
+              <a href="/projects">Proyectos</a>
+              <a href="https://wa.me/5216391234567" target="_blank">WhatsApp</a>
+            </div>
+          </div>
+
+          <div id="home-slider-placeholder">
+            <!-- Aquí irá el contenido del HomeSlider -->
+          </div>
+
+        </section>
+        <div class="home-sci">
+          <a href="https://www.facebook.com" target="_blank"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com" target="_blank"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com" target="_blank"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <script src="initloader.js"></script>
   </body>
 </html>
