@@ -56,7 +56,7 @@ const customProjects = [
       image44,
       image45,  // <-- MODIFICA ESTAS RUTAS CON TUS IMÁGENES LOCALES
     ],
-    link: "https://mi-app-movil.com",
+    link: "https://portafolio-two-rose.vercel.app/Home",
   },
   {
     id: 2,

@@ -14,9 +14,9 @@ const Contact = () => {
           <p>Email:</p>
           <p>Demasiadohumanoofficial@gmail.com</p>
                   <div className="contact-sci">
-                    <a href="https://www.facebook.com"><i className="bx bxl-facebook"></i></a>
-                    <a href="https://www.instagram.com"><i className="bx bxl-instagram"></i></a>
-                    <a href="https://www.linkedin.com"><i className="bx bxl-linkedin"></i></a>
+                    <a href="https://www.facebook.com/share/1Ee3z6aEMG/"><i className="bx bxl-facebook"></i></a>
+                    <a href="https://www.instagram.com/brusybby?igsh=MXh1d3dycjFhMndnMg=="><i className="bx bxl-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/demasiadohumanoofficial"><i className="bx bxl-linkedin"></i></a>
         </div>
         </SpotlightCard>
     </div>

@@ -13,7 +13,7 @@ const Home = () => {
           <div className="btn-box">
             <a href="/contact">Contacto</a>
             <a href="/projects">Proyectos</a>
-            <a href="https://wa.me/5216391234567" target="_blank">WhatsApp</a>
+            <a href="https://wa.me/5216391280627" target="_blank">WhatsApp</a>
           </div>
         </div>
 
@@ -21,9 +21,9 @@ const Home = () => {
 
         </section>
         <div className="home-sci">
-          <a href="https://www.facebook.com" target="_blank"><i className="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com" target="_blank"><i className="bx bxl-instagram"></i></a>
-          <a href="https://www.linkedin.com" target="_blank"><i className="bx bxl-linkedin"></i></a>
+          <a href="https://www.facebook.com/share/1Ee3z6aEMG/" target="_blank"><i className="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/brusybby?igsh=MXh1d3dycjFhMndnMg==" target="_blank"><i className="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/demasiadohumanoofficial" target="_blank"><i className="bx bxl-linkedin"></i></a>
         </div>
     </div>
   );
